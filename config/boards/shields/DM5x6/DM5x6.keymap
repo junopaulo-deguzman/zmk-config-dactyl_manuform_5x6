@@ -1,7 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/outputs.h>
 
 #define DEFAULT 0
 #define LWR 1
@@ -19,9 +18,9 @@
                 &kp LSHFT &kp A  &kp S  &kp D  &kp F  &kp G               &kp H  &kp J  &kp K     &kp L   &kp SEMI &kp SQT
                 &kp LCTRL &kp Z  &kp X  &kp C  &kp V  &kp B               &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH &kp BSLH
                                  &kp LBKT &kp RBKT                                      &kp PLUS  &kp EQUAL
-                                            &mo LWR  &kp SPACE           &kp ENTER  &mo RSE
+                                            &mo 1     &kp SPACE           &kp ENTER  &mo 2
                                             &kp CAPS  &kp LALT           &kp END  &kp RGUI
-                                            &kp BSPC  &mo ADJ            &kp DEL  &kp GRAVE
+                                            &kp BSPC  &mo 3              &kp DEL  &kp GRAVE
             >;
         };
 
@@ -54,7 +53,7 @@
         adjust_layer {
             bindings = <
                 &none &bt BT_SEL 0 &none        &none &none  &none            &none       &none  &none &none &none &none
-                &none &bt BT_SEL 1 &none        &none &reset &none            &none       &reset &none &none &none &none
+                &none &bt BT_SEL 1 &none        &none &none  &none            &none       &reset &none &none &none &none
                 &none &bt BT_SEL 2 &none        &none &none  &none            &none       &none  &none &none &none &none
                 &none &bt BT_SEL 3 &bt BT_CLR   &none &none  &bootloader      &bootloader &none  &none &none &none &none
                                    &none        &none                                            &none &none
