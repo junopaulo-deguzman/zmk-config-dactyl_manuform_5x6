@@ -1,5 +1,3 @@
-kconfig.defconfig
-
 if SHIELD_DM5X6_LEFT
 
     config ZMK_KEYBOARD_NAME
