@@ -1,0 +1,25 @@
+kconfig.defconfig
+
+if SHIELD_DM5X6_LEFT
+
+    config ZMK_KEYBOARD_NAME
+        default "Dactyl(L)"
+
+    config ZMK_SPLIT_BLE_ROLE_CENTRAL
+        default y
+
+endif
+
+if SHIELD_DM5X6_RIGHT
+
+    config ZMK_KEYBOARD_NAME
+        default "Dactyl(R)"
+
+endif
+
+if SHIELD_DM5X6_LEFT || SHIELD_DM5X6_RIGHT
+
+    config ZMK_SPLIT
+        default y
+
+endif
