@@ -1,3 +1,5 @@
+#include "DM5x6.dtsi"
+
 &kscan0 {
     col-gpios
         = <&pro_micro 4 GPIO_ACTIVE_HIGH>
